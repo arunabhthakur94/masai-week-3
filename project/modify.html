@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+  <body>
+      <button onclick="start()">Start Game</button>
+    
+    <script type="text/javascript">
+        var body = document.querySelector('body');
+        function start(){
+            var button1 = document.createElement('button');
+            button1.textContent="Player 1";
+            button1.setAttribute('onclick', 'player2()')
+            body.appendChild(button1);
+        }
+        function player2(){
+            var button2 = document.createElement('button');
+            button1.setAttribute('onclick', 'player2()')
+            body.appendChild(button2);
+        }
+    </script>
+  </body>
+</html>
